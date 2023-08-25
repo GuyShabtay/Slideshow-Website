@@ -51,7 +51,11 @@ body{
   transition: all 0.3s ease-in;
 }
 
-.btn:hover{
+.btn:hover, .btn-dark{
   background:#333;
   color:white;
+}
+.btn-dark:hover{
+  background:#f4f4f4;
+  color:#333;
 }
