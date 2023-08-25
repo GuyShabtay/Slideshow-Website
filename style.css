@@ -59,3 +59,29 @@ body{
   background:#f4f4f4;
   color:#333;
 }
+
+/* page animation */
+#page-1 h1{
+  transform:translateY(-1000px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+/* keyframes */
+@keyframes heading{
+  to{
+    transform:translateY(0px);
+  }
+
+}
+#page-1 p{
+  transform:translateX(-1700px);
+  animation: paragraph 0.5s forwards ease-in 1.5s;
+}
+
+/* keyframes */
+@keyframes paragraph{
+  to{
+    transform:translateX(0px);
+  }
+
+}
