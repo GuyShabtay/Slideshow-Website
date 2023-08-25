@@ -36,8 +36,9 @@ body{
   margin: 1rem;
 }
 
-.page.p{
+.page p{
   font-size:1.3rem;
+  padding: 0 15rem;
 }
 .btn{
   display: inline-block;
