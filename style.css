@@ -64,7 +64,7 @@ body{
 
 /* page animation */
 #page-1 h1{
-  transform:translateY(-1000px);
+  transform:translateY(-150vh);
   animation: heading var(--animate-speed) forwards ease-in;
 }
 
@@ -76,7 +76,7 @@ body{
 
 }
 #page-1 p{
-  transform:translateX(-1700px);
+  transform:translateX(-100vw);
   animation: paragraph 0.5s forwards ease-in 1.5s;
 }
 
