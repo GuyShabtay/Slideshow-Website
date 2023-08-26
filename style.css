@@ -113,8 +113,13 @@ body{
 } */
 
 
-/* #next2.clicked{
-  transform:translateX(300px);
+#movebutton{
+  padding: 17.5px 35px;
+
+}
+/* 
+#next2{
+  padding: 15px 3px;
 
 } */
 
