@@ -4,11 +4,17 @@ const next2El = document.getElementById('next2');
 const moveButtonPrev = document.getElementById('moveButtonPrev');
 const prev2El = document.getElementById('prev2');
 let nextClicksCounter=0;
-let prevClicksCounter=0;  
+let prevClicksCounter=0; 
+let squareClicksCounter=0; 
+const squareButtonPrev = document.getElementById('squareButtonPrev');
+const prev3El = document.getElementById('prev3');
+
+
 
 
 next2El.classList.add('hidden');    
 prev2El.classList.add('hidden');    
+ prev3El.classList.add('hidden');    
 
 
 moveButtonNext.addEventListener('click', () => {
@@ -85,4 +91,24 @@ moveButtonPrev.addEventListener('click', () => {
       break;
     default:
   }
+});
+squareButtonPrev.addEventListener('click', () => {
+  squareClicksCounter++;
+  console.log(squareClicksCounter);
+  
+  switch (squareClicksCounter) {
+    case 1:
+      squareButtonPrev.classList.add('clickPrevSquare');
+      squareButtonPrev.textContent = "What is the language of the squares? Cuban.";
+    
+      break;
+    case 2:
+      squareButtonPrev.classList.remove('clickPrevSquare');
+      squareButtonPrev.classList.add('hidden');  
+      prev3El.classList.remove('hidden');  
+  
+      break;
+    default:
+  }
+  
 });

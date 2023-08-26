@@ -235,6 +235,43 @@ button {
   transform: rotate(360deg);
 }
 
+.clickPrevSquare{
+  max-width: 25vh;
+  max-height: 25vh;
+  animation:animate4 1s forwards ease-in-out, animate5 1s forwards 1s;
+}
+
+@keyframes animate4 {
+  to {
+    width: 16vh;
+    height: 16vh;
+  }
+}
+@keyframes animate5 {
+  to {
+    transform: translateY(3vh); 
+  }
+}
+#prev3{
+  width: 14vh;
+  height: 14vh;
+  transform: translateY(3vh); 
+  animation:animate2 3s forwards ease-in-out, animate3 1s ease-in-out forwards ;
+}
+
+@keyframes animate2 {
+  to {
+    width: 16vh;
+    height: 3vh;
+    }
+}
+@keyframes animate3 {
+  to {
+    transform: translateY(-1vh); 
+  }
+}
+
+
 
 
 
