@@ -97,31 +97,12 @@ body{
   font-size:6rem;
   transition: all 0.3s ease-in;
 } 
-/*
-.btn#next-2:hover {
-  transform: translateX(300px); 
-} */
-/* .btn.clicked{
-  animation: animate 2s forwards ease-in-out;
-  transform:translateX(300px);
-
-} */
-/* @keyframes animate {
-  to{
-    transform:translateY(300px);
-  }
-} */
-
 
 #movebutton{
   padding: 17.5px 35px;
 
 }
-/* 
-#next2{
-  padding: 15px 3px;
 
-} */
 
 button {
   border: none;
