@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/aaee1281c9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+
   <title>slideshow</title>
 </head>
 <body>
@@ -22,15 +23,19 @@
     <!-- page 2 -->
 
   <section id="page-2" class="page">
+    <a href="#page-3" class="btn" id="next2">
+      Next Page <i class="fas fa-arrow-circle-down"></i>
+    </a>
     <h1>Aesthetic Innovation</h1>
     <p>Dive into aesthetics and innovation! Each slide uses HTML and CSS animatios. Beyond looks, these techniques adapt for various subjects</p>
       <div>
         <a href="#page-1" class="btn btn-dark">
           Previous Page <i class="fas fa-arrow-circle-up"></i>
         </a>
-        <a href="#page-3" class="btn">
+        <button id="movebutton" class="btn"> Next Page</button>
+        <!-- <a href="#page-2" class="btn" id="next-2">
           Next Page <i class="fas fa-arrow-circle-down"></i>
-        </a>
+        </a> -->
       </div>
   </section>
 
@@ -38,6 +43,7 @@
 
   <section id="page-3" class="page">
     <h1>Crafting Possibilities</h1>
+    <div class="box"></div>
     <p>Witness the art of possibilities. This slide show's a canvas for future ideas. Techniques and layouts are versatile for education, portfolios, and more</p>
       <div>
         <a href="#page-2" class="btn btn-dark">
@@ -88,5 +94,6 @@ if (this.hash !== '') {
 }
 });
   </script>
+    <script src="script.js"></script>
 </body>
 </html>

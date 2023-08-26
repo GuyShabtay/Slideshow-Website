@@ -86,3 +86,94 @@ body{
   }
 
 }
+  .bigNext2{
+  display: inline-block;
+  padding:6rem 12rem;
+  background: #f4f4f4;
+  color:#333;
+  text-decoration: none;
+  border:none;
+  margin-top:1rem;
+  font-size:6rem;
+  transition: all 0.3s ease-in;
+} 
+/*
+.btn#next-2:hover {
+  transform: translateX(300px); 
+} */
+/* .btn.clicked{
+  animation: animate 2s forwards ease-in-out;
+  transform:translateX(300px);
+
+} */
+/* @keyframes animate {
+  to{
+    transform:translateY(300px);
+  }
+} */
+
+
+/* #next2.clicked{
+  transform:translateX(300px);
+
+} */
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: transform 0s; 
+}
+
+.click1 {
+  transform: translateX(300px); 
+}
+.click2 {
+  transform: translateX(300px) translateY(200px);
+}
+.click3 {
+  transform: translateX(0px) translateY(200px);
+}
+.click4 {
+  transform: translateX(0px) translateY(0px);
+}
+.click5 {
+  transform: translateX(100px); 
+}
+
+.hidden{
+  display:none;
+}
+.box {
+  background: white;
+  width: 20px;
+  height: 20px;
+  animation: animate 10s infinite;
+}
+
+@keyframes animate {
+  25% {
+    width: 100px;
+    transform-origin: left; /* Set the transform origin to the left side */
+  }
+  50% {
+    width: 100px;
+    transform-origin: right; /* Set the transform origin to the right side */
+    transform: scaleX(-1); /* Flip the box horizontally */
+  }
+  75% {
+    width: 20px;
+    transform-origin: right; /* Set the transform origin back to the right side */
+    transform: scaleX(-1); /* Keep the horizontal flip */
+  }
+  100% {
+    width: 20px;
+    transform-origin: left; /* Set the transform origin back to the left side */
+    transform: scaleX(1); /* Reset any horizontal flip */
+  }
+}
+
+
+
+
+
+
