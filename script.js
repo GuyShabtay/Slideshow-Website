@@ -32,8 +32,8 @@ moveButtonNext.addEventListener('click', () => {
    
       break;
     case 4:
-      moveButtonNext.classList.remove('clickNext');
-      moveButtonNext.classList.add('clickNext'); 
+      moveButtonNext.classList.remove('clickNext4');
+      moveButtonNext.classList.add('clickNext4'); 
       moveButtonNext.textContent = "Ok, no more fooling around!";
    
       break;
@@ -52,30 +52,30 @@ moveButtonPrev.addEventListener('click', () => {
   prevClicksCounter++;
   switch (prevClicksCounter) {
     case 1:
-      moveButtonPrev.classList.add('prevClick1');
+      moveButtonPrev.classList.add('clickPrev1');
       moveButtonPrev.textContent = "Did you really think it would be that easy?!";
     
       break;
     case 2:
-      moveButtonPrev.classList.remove('prevClick1');
-      moveButtonPrev.classList.add('prevClick2');  
+      moveButtonPrev.classList.remove('clickPrev1');
+      moveButtonPrev.classList.add('clickPrev2');  
       moveButtonPrev.textContent = "You have a huge button in the middle of the screen and you still chose to click on me";
   
       break;
     case 3:
-      moveButtonPrev.classList.remove('prevClick');
-      moveButtonPrev.classList.add('prevClick3'); 
+      moveButtonPrev.classList.remove('clickPrev2');
+      moveButtonPrev.classList.add('clickPrev3'); 
       moveButtonPrev.textContent = "You are determined, and I'm bored we are a good match!";
    
       break;
     case 4:
-      moveButtonPrev.classList.remove('prevClick3');
-      moveButtonPrev.classList.add('prevClick4'); 
+      moveButtonPrev.classList.remove('clickPrev3');
+      moveButtonPrev.classList.add('clickPrev4'); 
       moveButtonPrev.textContent = "Not giving up huh? Alright, you won.. See you in the next project!";
    
       break;
     case 5:
-      moveButtonPrev.classList.remove('prevClick4');
+      moveButtonPrev.classList.remove('clickPrev4');
       moveButtonPrev.classList.add('hidden');
       prev2El.classList.add('prev2');
       prev2El.classList.remove('hidden');

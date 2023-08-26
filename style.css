@@ -111,6 +111,19 @@ body{
     max-width: 500px;
 } */
 
+.prev2{
+  transform: translateX(-550px) translateY(-650px);
+  animation: animate8 1s forwards;
+  ;
+}
+@keyframes animate8 {
+
+  to{
+    transform: translateX(0px) translateY(0px);
+
+  }
+}
+
 #moveButtonNext, #moveButtonPrev{
   padding: 17.5px 35px;
 }
@@ -140,20 +153,20 @@ button {
   transform: translateX(100px); 
 }
 .clickPrev1 {
-  transform: translateX(300px); 
+  transform: translateX(-550px) translateY(-200px);
 }
 .clickPrev2 {
-  transform: translateX(300px) translateY(200px);
+  transform: translateX(450px) translateY(0px);
 
 }
 .clickPrev3 {
-  transform: translateX(0px) translateY(200px);
+  transform: translateX(550px) translateY(-500px);
 }
 .clickPrev4 {
-  transform: translateX(0px) translateY(0px);
+  transform: translateX(-550px) translateY(-650px);
 }
 .clickPrev5 {
-  transform: translateX(100px); 
+  transform: translateX(0px) translateY(0px);
 }
 
 .hidden{
