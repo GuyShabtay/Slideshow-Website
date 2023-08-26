@@ -144,12 +144,12 @@ button {
   display:none;
 }
 .box {
-  position: absolute; /* Set the box to absolute positioning */
-
+  position: absolute; 
+  transform:  translateY(-30px);
   background: white;
   width: 20px;
   height: 20px;
-  animation: animate 3s forwards ease-in, animate2 3s forwards ease-in 3s;
+  animation: animate 3s forwards ease-in, animate2 3s forwards ease-in 3s,animate3 3s forwards ease-in-out 6s,animate4 3s forwards ease-in 9s;
 }
 
 @keyframes animate {
@@ -160,7 +160,6 @@ button {
   }
   100%{
     width: 600px;
-    transform:  translateY(50px);
 
 
   }
@@ -176,7 +175,73 @@ button {
   100%{
     width: 400px;
     height: 200px;
+    transform:  translateY(80px);
 
+
+
+  }
+}
+@keyframes animate3 {
+
+  0%{
+
+
+  }
+  100%{
+    transform: translateX(250px) translateY(250px);
+
+
+
+
+  }
+}
+@keyframes animate4 {
+
+  0%{
+    transform: translateX(250px) translateY(250px);
+
+
+  }
+  100%{
+    transform: translateX(450px) translateY(-300px);
+
+
+
+
+  }
+}
+
+@keyframes animate5 {
+
+  to{
+    display:none;
+  }
+
+}
+@keyframes animate6 {
+
+  to{
+    transform: translateX(250px) translateY(250px);
+
+  }
+}
+
+#prev3{
+  animation: animate5 0s forwards ease-in 6s,animate6 0s forwards ease-in 9s;
+}
+
+#next3{
+  animation: animate7 3s forwards ease-in 6s ;
+}
+
+@keyframes animate7 {
+
+  to{
+    /* width: 50px;
+    height: 50px; */
+    padding: 60px 25px;
+    border-radius: 50%;
+    
 
   }
 }
