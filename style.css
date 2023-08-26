@@ -50,6 +50,7 @@ body{
   margin-top:1rem;
   font-size:1.1rem;
   transition: all 0.3s ease-in;
+  max-width: 500px;
 }
 
 .btn:hover, .btn-dark{
@@ -97,11 +98,24 @@ body{
   font-size:6rem;
   transition: all 0.3s ease-in;
 } 
+  /* .prev2{
+    display: inline-block;
+    padding:1rem 2rem;
+    background: #333;
+    color:white;
+    text-decoration: none;
+    border:none;
+    margin-top:1rem;
+    font-size:1.1rem;
+    transition: all 0.3s ease-in;
+    max-width: 500px;
+} */
 
-#movebutton{
+#moveButtonNext, #moveButtonPrev{
   padding: 17.5px 35px;
-
 }
+
+
 
 
 button {
@@ -110,19 +124,35 @@ button {
   transition: transform 0s; 
 }
 
-.click1 {
+.clickNext1 {
   transform: translateX(300px); 
 }
-.click2 {
+.clickNext2 {
   transform: translateX(300px) translateY(200px);
 }
-.click3 {
+.clickNext3 {
   transform: translateX(0px) translateY(200px);
 }
-.click4 {
+.clickNext4 {
   transform: translateX(0px) translateY(0px);
 }
-.click5 {
+.clickNext5 {
+  transform: translateX(100px); 
+}
+.clickPrev1 {
+  transform: translateX(300px); 
+}
+.clickPrev2 {
+  transform: translateX(300px) translateY(200px);
+
+}
+.clickPrev3 {
+  transform: translateX(0px) translateY(200px);
+}
+.clickPrev4 {
+  transform: translateX(0px) translateY(0px);
+}
+.clickPrev5 {
   transform: translateX(100px); 
 }
 

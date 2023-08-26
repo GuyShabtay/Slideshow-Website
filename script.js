@@ -1,48 +1,88 @@
 'use strict';
-const moveButton = document.getElementById('movebutton');
+const moveButtonNext = document.getElementById('moveButtonNext');
 const next2El = document.getElementById('next2');
-let clicksCounter=0;
+const moveButtonPrev = document.getElementById('moveButtonPrev');
+const prev2El = document.getElementById('prev2');
+let nextClicksCounter=0;
+let prevClicksCounter=0;  
+
 
 next2El.classList.add('hidden');    
+prev2El.classList.add('hidden');    
 
 
-moveButton.addEventListener('click', () => {
-  clicksCounter++;
-  switch (clicksCounter) {
+moveButtonNext.addEventListener('click', () => {
+  nextClicksCounter++;
+  switch (nextClicksCounter) {
     case 1:
-      moveButton.classList.add('click1');
-      moveButton.textContent = "Oops!";
+      moveButtonNext.classList.add('clickNext1');
+      moveButtonNext.textContent = "Oops!";
     
       break;
     case 2:
-      moveButton.classList.remove('click1');
-      moveButton.classList.add('click2');  
-      moveButton.textContent = "Miss me..";
+      moveButtonNext.classList.remove('clickNext1');
+      moveButtonNext.classList.add('clickNext2');  
+      moveButtonNext.textContent = "Miss me..";
   
       break;
     case 3:
-      moveButton.classList.remove('click2');
-      moveButton.classList.add('click3'); 
-      moveButton.textContent = "I'm over here";
+      moveButtonNext.classList.remove('clickNext');
+      moveButtonNext.classList.add('clickNext3'); 
+      moveButtonNext.textContent = "I'm over here";
    
       break;
     case 4:
-      moveButton.classList.remove('click3');
-      moveButton.classList.add('click4'); 
-      moveButton.textContent = "Ok, no more fooling around!";
+      moveButtonNext.classList.remove('clickNext');
+      moveButtonNext.classList.add('clickNext'); 
+      moveButtonNext.textContent = "Ok, no more fooling around!";
    
       break;
     case 5:
-      moveButton.classList.remove('click4');
-      moveButton.classList.add('hidden');
+      moveButtonNext.classList.remove('clickNext');
+      moveButtonNext.classList.add('hidden');
       next2El.classList.add('bigNext2');
       next2El.classList.remove('hidden');
-    
-  
-      clicksCounter=0;  
+      nextClicksCounter=0;  
       break;
     default:
   }
-  // moveButton.classList.add('click1'); 
-  console.log(clicksCounter);
+});
+
+moveButtonPrev.addEventListener('click', () => {
+  prevClicksCounter++;
+  switch (prevClicksCounter) {
+    case 1:
+      moveButtonPrev.classList.add('prevClick1');
+      moveButtonPrev.textContent = "Did you really think it would be that easy?!";
+    
+      break;
+    case 2:
+      moveButtonPrev.classList.remove('prevClick1');
+      moveButtonPrev.classList.add('prevClick2');  
+      moveButtonPrev.textContent = "You have a huge button in the middle of the screen and you still chose to click on me";
+  
+      break;
+    case 3:
+      moveButtonPrev.classList.remove('prevClick');
+      moveButtonPrev.classList.add('prevClick3'); 
+      moveButtonPrev.textContent = "You are determined, and I'm bored we are a good match!";
+   
+      break;
+    case 4:
+      moveButtonPrev.classList.remove('prevClick3');
+      moveButtonPrev.classList.add('prevClick4'); 
+      moveButtonPrev.textContent = "Not giving up huh? Alright, you won.. See you in the next project!";
+   
+      break;
+    case 5:
+      moveButtonPrev.classList.remove('prevClick4');
+      moveButtonPrev.classList.add('hidden');
+      prev2El.classList.add('prev2');
+      prev2El.classList.remove('hidden');
+    
+  
+      prevClicksCounter=0;  
+      break;
+    default:
+  }
 });
