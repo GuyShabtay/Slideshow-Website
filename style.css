@@ -184,7 +184,32 @@ button {
   }
 }
 
+#page-4 h1{
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 5s linear infinite;
+}
 
+
+@keyframes rainbow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+#prev4{
+  transition: transform 0.3s ease-in;
+}
+
+#prev4:hover {
+  transform: rotate(360deg);
+}
 
 
 
