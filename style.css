@@ -144,31 +144,40 @@ button {
   display:none;
 }
 .box {
+  position: absolute; /* Set the box to absolute positioning */
+
   background: white;
   width: 20px;
   height: 20px;
-  animation: animate 10s infinite;
+  animation: animate 3s forwards ease-in, animate2 3s forwards ease-in 3s;
 }
 
 @keyframes animate {
-  25% {
-    width: 100px;
-    transform-origin: left; /* Set the transform origin to the left side */
-  }
-  50% {
-    width: 100px;
-    transform-origin: right; /* Set the transform origin to the right side */
-    transform: scaleX(-1); /* Flip the box horizontally */
-  }
-  75% {
+
+  0%{
     width: 20px;
-    transform-origin: right; /* Set the transform origin back to the right side */
-    transform: scaleX(-1); /* Keep the horizontal flip */
+
   }
-  100% {
-    width: 20px;
-    transform-origin: left; /* Set the transform origin back to the left side */
-    transform: scaleX(1); /* Reset any horizontal flip */
+  100%{
+    width: 600px;
+    transform:  translateY(50px);
+
+
+  }
+}
+@keyframes animate2 {
+
+  0%{
+    width: 600px;
+    height: 20px;
+
+
+  }
+  100%{
+    width: 400px;
+    height: 200px;
+
+
   }
 }
 
